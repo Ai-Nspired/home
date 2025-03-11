@@ -1,0 +1,153 @@
+:root {
+  --dark-bg: #000;
+  --light-text: #fff;
+  --accent-color: rgba(255, 255, 255, 0.1);
+  --muted-text: #aaa;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  font-family: 'Georgia', 'Noto Serif JP', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Footer styling */
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--muted-text);
+  width: 100%;
+  padding: 20px 0;
+  margin-top: auto; /* Push footer to bottom */
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--muted-text);
+  font-size: 18px;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--light-text);
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+/* Page-specific styles */
+.page-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.page-container h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.page-container p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.page-container a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.page-container a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Index page specific styles */
+.container {
+  transform: scale(1.5);
+  transform-origin: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px; /* Push up from the footer */
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.tagline {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+  width: 300px; /* Set width for container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline input {
+  padding: 15px; /* Increased padding for bigger input */
+  font-size: 16px; /* Increased font size */
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tagline form {
+  margin: 0;
+  width: 100%;
+}
+
+/* Additional styles for content pages */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Make sure links have consistent styling */
+a {
+  transition: color 0.3s ease;
+}
